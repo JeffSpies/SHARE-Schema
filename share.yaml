@@ -181,7 +181,7 @@
             properties:
                 startDate:
                     description: The date and time at which the object will be accessible. If the resource was always free to read, then the date the object was created should be used.
-                    type: "string"
+                    type: ["string", "null"]
                     format: date
                 endDate:
                     description: The date and time at which restrictions such as fees or registrations will be in place limiting accessibility.
