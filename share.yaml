@@ -194,7 +194,7 @@
             type: array
             items:
                 type: ["string", "null"]
-                pattern: "[a-z][a-z][a-z]"
+                pattern: "[a-z][a-z][a-z]?"
         licenses:
             description: The licenses under which the object has been released.
             type: "array"
