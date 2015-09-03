@@ -183,7 +183,7 @@
             properties:
                 startDate:
                     description: The date and time at which the object will be accessible. If the resource was always free to read, then the date the object was created should be used.
-                    type: "string"
+                    type: ["string", "null"]
                     format: date
                 endDate:
                     description: The date and time at which restrictions such as fees or registrations will be in place limiting accessibility.
@@ -195,8 +195,8 @@
             description: The primary languages in which the content of the resource is presented. Values used for this element MUST conform to ISO 639–3. This offers three letter tags e.g. "eng" for English.
             type: array
             items:
-                type: string
-                pattern: "[a-z][a-z][a-z]"
+                type: ["string", "null"]
+                pattern: "[a-z][a-z][a-z]?"
         licenses:
             description: The licenses under which the object has been released.
             type: "array"
